@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* <!-- @model HalloDocApp.Entities.ViewModels.Admin.DayWiseSchedulingViewModel
+<h4>@Model.CurrentDate.DayOfWeek , @Model.CurrentDate.ToString("MMM dd,yyyy")</h4> --> *@
+<div class="d-flex justify-content-end">
+    <i class="bi bi-square-fill me-2 border-0" style="color:pink;"></i>Pending Shifts
+    <i class="bi bi-square-fill me-2 ms-2 border-0" style="color:green;"></i>Approved Shifts
+</div>
+<div class="d-flex align-items-center">
+    <h1>   <i class="fa-solid fa-circle-chevron-left me-3" style="color:skyblue;"></i></h1>
+    <h3>  <i class="fa-solid fa-calendar-check me-3"></i></h3>
+    <h1>  <i class="fa-solid fa-circle-chevron-right" style="color:skyblue;"></i></h1>
+</div>
+
+<div class="d-flex justify-content-end">
+    <button class="btn btn-info text-white me-2">Day</button>
+    <button class="btn btn-outline-info me-2">Week</button>
+    <button class="btn btn-outline-info">Month</button>
+</div>
+<br />
+<div class="table-responsive">
+    <table class="table table-bordered w-100" style="border:1px solid black;">
+        <tr class="table-secondary">
+            <th>STAFF</th>
+            <th>12A</th>
+            <th>1A</th>
+            <th>2A</th>
+            <th>3A</th>
+            <th>4A</td>
+            <th>5A</th>
+            <th>6A</th>
+            <th>7A</th>
+            <th>8A</th>
+            <th>9A</th>
+            <th>10A</th>
+            <th>11A</th>
+            <th>12P</th>
+            <th>1P</th>
+            <th>2P</th>
+            <th>3P</th>
+            <th>4P</th>
+            <th>5P</th>
+            <th>6P</th>
+            <th>7P</th>
+            <th>8P</th>
+            <th>9P</th>
+            <th>10P</th>
+            <th>11P</th>
+        </tr>
+        <tr>
+            <td>Coverage</td>
+        </tr>
+         @* @foreach (var data in Model.physicians)
+        {
+            <tr>
+                <td>@data.Firstname @data.Lastname</td>
+            </tr>
+        }  *@
+
+    </table>
+</div>
